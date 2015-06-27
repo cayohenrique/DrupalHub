@@ -248,6 +248,7 @@ body{
     border: none;
     border-radius: 5px;
     width: 100%;
+    background:url(../img/ico-search-white.png) no-repeat right 18px #61b8e5;
 }
 
 .page-wrapper {
