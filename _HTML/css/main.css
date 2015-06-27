@@ -163,6 +163,11 @@ body{
     text-align: right;
 }
 
+.card-title .link-user {
+    font-weight:normal;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
 .home-banner{
    background: #34a4de;
    min-height: 600px;
