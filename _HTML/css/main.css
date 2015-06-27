@@ -123,12 +123,30 @@ body{
     margin-left: 0;
 }
 
-header{
+.mobile-touch-header{
     background: #34a4de;
-    padding: 15px 0;
+    padding: 28px 0 18px;
     overflow: hidden;
+    text-align:center;
+    position:fixed;
+    width:100%;
+    z-index:10;
 }
-
+.mobile-touch-header .header-title {
+    margin-left:60px;
+    font-size:34px;
+    margin-top:0;
+    line-height: 0.7;
+    float:left;
+}
+.mobile-touch-header .search {
+    display:inline-block;
+    margin-top:-10px;
+    margin-bottom:0
+}
+.mobile-touch-header .form-container input[type=text] {
+    padding:10px;
+}
 .menu-bar a,
 .menu-gh a{
     font-size: 32px;
@@ -351,4 +369,10 @@ footer{
     font-family: 'source_sans_proregular';
     font-size: 16px;
     letter-spacing: 0.10em;
+}
+
+@media screen and (min-width:1142px) {
+    .mobile-touch-header .search {
+        min-width:530px;
+    }
 }

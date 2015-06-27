@@ -5,7 +5,7 @@ var GlobalApp = {};
       App = {
         Init : function() {
 
-            App.TouchMenu.Init('.page-wrapper', ["#header .logo",".language-switcher-locale-url"] , [".menu-container"]);
+            App.TouchMenu.Init('.page-wrapper', ["header .inner"] , [".menu-container"]);
             
 
             $(window).resize(function() {
@@ -45,13 +45,13 @@ var GlobalApp = {};
           Init: function(pageWrapper, headerElements, menuElements) {
             App.TouchMenu.Resize();
             App.TouchMenu.WrapPage(pageWrapper);
-            //App.TouchMenu.PopulateHeader(headerElements);
+            App.TouchMenu.PopulateHeader(headerElements);
             App.TouchMenu.PopulateMenu(menuElements);
             App.TouchMenu.Actions();
             App.TouchMenu.Scroll();
           },
           Actions: function() {
-            $(document).on('click', '.toggle-menu', function() {
+            $(document).on('click', '.mobile-touch-menu-toggle', function() {
               if (!$('html').hasClass('menu-open')) {
                 App.TouchMenu.Open();
               } else {
