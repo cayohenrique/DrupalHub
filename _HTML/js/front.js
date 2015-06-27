@@ -5,7 +5,7 @@ var GlobalApp = {};
       App = {
         Init : function() {
 
-            App.TouchMenu.Init('.main', ["#header .logo",".language-switcher-locale-url"] , [".menu-container"]);
+            App.TouchMenu.Init('.page-wrapper', ["#header .logo",".language-switcher-locale-url"] , [".menu-container"]);
             
 
             $(window).resize(function() {

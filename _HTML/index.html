@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>DrupalHub - Explore o mundo do Drupal</title>
+    <link rel="stylesheet" href="css/touchmenu.css">
     <link rel="stylesheet" href="css/main.css">
      <link rel="stylesheet" href="css/octicons.css">
 </head>
 <body>
+    <div class="header-wrapper">
+        <nav class="menu-container">
+            <div class="logged-user">
+                <p>Logado como <a href="user.html">Eileen Wood</a>. <a href="#"> Sair</a></p>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="leaderboard.html">Leaderboad</a></li>
+                <li><a href="contribute.html">Contribua</a></li>
+            </ul>
+        </nav>
+     </div>
+    <div class="page-wrapper">
     <header>
         <div class="menu-bar col-md-1">
-            <a href="" class="octicon octicon-three-bars"></a>
         </div>
         <div class="col-md-10">
             
@@ -19,6 +32,7 @@
         </div>
     </header>
     <main class="main">
+        <span class="toggle-menu">Menu</span>
         <div class="row home-banner">
             <div class="container">
                 <h1 class="header-title">Drupal<span>HUB</span></h1>
@@ -183,5 +197,9 @@
     <footer>
         <p>Made with <span class="octicon octicon-heart"></span> by the <strong>Itelios</strong> team.</p>
     </footer>
+    <div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/front.js"></script>
 </body>
 </html>
