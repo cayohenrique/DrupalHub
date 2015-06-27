@@ -7,11 +7,11 @@
 	height:17px;
 	background:url(../img/ico-menu.png);
 	display: block;
-  text-indent: -999px;
-  position:absolute;
-  left:26px;
-  top:35px;
-  cursor:pointer;
+	text-indent: -999px;
+	position:absolute;
+	left:26px;
+	top:20px;
+	cursor:pointer;
 }
 
 .logged-user {

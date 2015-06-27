@@ -110,11 +110,7 @@ var GlobalApp = {};
             $('.mobile-touch-menu .inner').addClass('mobile-touch-slideout inner-opened');
           },
           Resize: function() {
-            if (App.TouchMenu.Exists()) {
               $('html').addClass('mobile-touch-menu-exists');
-            } else {
-              $('html').removeClass('mobile-touch-menu-exists');
-            }
           },
           Scroll: function() {
             $(window).scroll(function() {
