@@ -1,3 +1,18 @@
+header .menu-container {
+	display:none;
+}
+
+.toggle-menu {
+	width:25px;
+	height:17px;
+	background:url(../img/ico-menu.png);
+	display: block;
+  text-indent: -999px;
+  position:absolute;
+  left:26px;
+  top:35px;
+}
+
 .mobile-touch-menu,
 .mobile-touch-header {
 	display:none!important;
