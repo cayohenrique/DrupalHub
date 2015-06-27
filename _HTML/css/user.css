@@ -1,0 +1,64 @@
+.sidebar .x-scope{
+	clear: both;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.octicon-star{
+	color: #ffc600;
+}
+
+.octicon-repo-forked{
+	color: #78909c
+}
+
+.box-sidebar{
+	overflow: hidden;
+	background: #fff;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+.sidebar h4{
+	color: #78909c;
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-family: 'source_sans_probold';
+	letter-spacing: 0.10em;
+}
+.user-card .card-link{
+	float: left;
+	padding: 2px 0;
+}
+
+.box-contrib .card-title{
+	font-size: 14px;
+	color: #b0b0b0;
+}
+
+.box-user .card-title{
+	font-size: 16px;
+	padding: 7px 0 0 0;
+}
+
+.card-title .link-user{
+	color: #34a4de;
+}
+
+.user-card .card-image{
+	max-width: 90px;
+}
+.link-module{
+	font-size: 18px;
+}
+
+.card-link a{
+	color: #34a4de;
+}
+.user-card .card-title{
+	float: left;
+	margin-right: 10px;
+}
+
+.user-card .card-header{
+	overflow: hidden;
+}
