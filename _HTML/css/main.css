@@ -17,6 +17,8 @@
     box-sizing: border-box;
     -webkit-font-smoothing:antialiased;
     outline: none;
+    list-style: none;
+    border: none;
 }
 
 @font-face {
