@@ -8,7 +8,7 @@
      <link rel="stylesheet" href="css/octicons.css">
 </head>
 <body>
-    <header>
+    <div class="header-wrapper">
         <nav class="menu-container">
             <div class="logged-user">
                 <p>Logado como <a href="user.html">Eileen Wood</a>. <a href="#"> Sair</a></p>
@@ -18,22 +18,34 @@
                 <li><a href="leaderboard.html">Leaderboad</a></li>
                 <li><a href="contribute.html">Contribua</a></li>
             </ul>
-            
         </nav>
+     </div>
+    <div class="page-wrapper">
+    <header>
+        <div class="menu-bar col-md-1">
+        </div>
+        <div class="col-md-10">
+            
+        </div>
+        <div class="menu-gh col-md-1">
+            <a href="" class="octicon octicon-mark-github"></a>
+        </div>
     </header>
     <main class="main">
+        <span class="toggle-menu">Menu</span>
         <div class="row home-banner">
-            <span class="toggle-menu">Menu</span>
             <div class="container">
-                <h1 class="header-title">DrupaLHUB</h1>
+                <h1 class="header-title">Drupal<span>HUB</span></h1>
                 <h2 class="header-subtitle">Agregando conteúdo Drupal, aumentando a colaboração.</h2>
                 <form class="search">
-                    <input name="q" class="search-field" type="text" id="search-field" autocomplete="off" placeholder="Encontre módulos, treinamentos, patches ou posts">
-                    <label class="search-label" for="search-field">
-                        <span class="search-label-content"></span>
-                    </label>
+                    <div class="form-container">
+                        <input name="q" class="search-field" type="text" id="search-field" autocomplete="off" placeholder="Encontre módulos, treinamentos, patches ou posts">
+                        <label class="search-label" for="search-field">
+                            <span class="search-label-content"></span>
+                        </label>
+                    </div>
                 </form>
-                <p>ou</p>
+                <p class="mini-info">ou</p>
                 <a href="" class="btn-primary">Cadastre sua contribuição :)</a>
             </div>
         </div>
@@ -54,14 +66,14 @@
                             <div class="card-body">
                                 <p class="card-description">Pellentesque eu molestie diam, in fermentum lectus. Duis a orci a erat. Aliquam commodo quis felis a volutpat. Duis posuere ut nisl vitae auctor.</p>
                             </div>
-                        </div>
-                        <div class="card-footer">
-                            <ul class="card-info-list">
-                                <li class="card-info-item">
-                                    <span class="octicon octicon-heart"></span>
-                                    34
-                                </li>
-                            </ul>
+                            <div class="card-footer">
+                                <ul class="card-info-list">
+                                    <li class="card-info-item">
+                                        <span class="octicon octicon-heart"></span>
+                                        34
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="card x-scope paper-material-0">
@@ -77,15 +89,16 @@
                             <div class="card-body">
                                 <p class="card-description">Pellentesque eu molestie diam, in fermentum lectus. Duis a orci a erat. Aliquam commodo quis felis a volutpat. Duis posuere ut nisl vitae auctor.</p>
                             </div>
+                            <div class="card-footer">
+                                <ul class="card-info-list">
+                                    <li class="card-info-item">
+                                        <span class="octicon octicon-heart"></span>
+                                        54
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <ul class="card-info-list">
-                                <li class="card-info-item">
-                                    <span class="octicon octicon-heart"></span>
-                                    54
-                                </li>
-                            </ul>
-                        </div>
+                        
                     </div>
                     <div class="card x-scope paper-material-0">
                         <div class="card-image">
@@ -100,20 +113,20 @@
                             <div class="card-body">
                                 <p class="card-description">Pellentesque eu molestie diam, in fermentum lectus. Duis a orci a erat. Aliquam commodo quis felis a volutpat. Duis posuere ut nisl vitae auctor.</p>
                             </div>
-                        </div>
-                        <div class="card-footer">
-                            <ul class="card-info-list">
-                                <li class="card-info-item">
-                                    <span class="octicon octicon-heart"></span>
-                                    0
-                                </li>
-                            </ul>
+                            <div class="card-footer">
+                                <ul class="card-info-list">
+                                    <li class="card-info-item">
+                                        <span class="octicon octicon-heart"></span>
+                                        0
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <h3>Contribuições mais populares</h3>
-                    <div class="card x-scope paper-material-0">
+                    <div class="card contrib x-scope paper-material-0">
                         <a class="card-link" target="_blank" href="https://github.com/laborsync/ls-timezone-selector/"></a>
                         <div class="card-header">
                             <div class="card-title">
@@ -122,11 +135,11 @@
                         </div>
                         <div class="card-body">
                             <p class="card-description">Pellentesque eu molestie diam, in fermentum lectus. Duis a orci a erat. Aliquam commodo quis felis a volutp u sdi  irua at. Duis posuere ut nisl vitae auctor. </p>
+                        </div>
+                        <div class="card-footer">
                             <span class="card-subtitle">
                                 by <a target="_blank" href="https://github.com/">johndoe</a>
                             </span>
-                        </div>
-                        <div class="card-footer">
                             <ul class="card-info-list">
                                 <li class="card-info-item">
                                     <span class="octicon octicon-repo"></span>
@@ -139,7 +152,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="card x-scope paper-material-0">
+                    <div class="card contrib x-scope paper-material-0">
                         <a class="card-link" target="_blank" href="https://github.com/laborsync/ls-timezone-selector/"></a>
                         <div class="card-header">
                             <div class="card-title">
@@ -148,11 +161,11 @@
                         </div>
                         <div class="card-body">
                             <p class="card-description">Pellentesque eu molestie diam, in fermentum lectus. Duis a orci a erat. Aliquam commodo quis felis a volutp u sdi  irua at. Duis posuere ut nisl vitae auctor. </p>
+                        </div>
+                        <div class="card-footer">
                             <span class="card-subtitle">
                                 by <a target="_blank" href="https://github.com/">johndoe</a>
                             </span>
-                        </div>
-                        <div class="card-footer">
                             <ul class="card-info-list">
                                 <li class="card-info-item">
                                     <span class="octicon octicon-repo"></span>
@@ -168,15 +181,24 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row como-funciona">
             <div class="container">
-                <h4>Por que um hub?</h4>
-                <p>Anteger tincidunt massa purus, at finibus diam vehicula vitae. Praesent vel mi sapien. Maecenas tempor a purus vitae finibus. Quisque vitae aliquam libero. Nam congue eros ligula, nec aliquam ante mattis vel. Nulla tincidunt erat id dolor facilisis dapibus. Sed et massa imperdiet, mattis felis a, condimentum leo. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                <p>Sed et massa imperdiet, mattis felis a, condimentum leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque vestibulum. Sed et massa imperdiet, mattis felis a, condimentum leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque vestibulum convallis lacus et pulvinar. Pellentesque ornare, metus quis cursus placerat, nulla nunc sagittis sem, sed malesuada felis est non massa.  convallis lacus et pulvinar. Pellentesque ornare, metus quis cursus placerat, nulla nunc sagittis sem, sed malesuada felis est non massa. </p>
+                <h4>Sobre o DrupalHub</h4>
+                <div class="content">
+                    <p>O DrupalHub foi criado durante o Hackathon da Drupal Camp 2015, visando atender ao tema-desafio proposto:</p>
+                    <p>“Engajar a comunidade Drupal no Brasil, de forma a mais pessoas participarem ativamente desta, promovendo a troca e a colaboração.”</p>
+                    <p>Baseando-se em estimular a competição saudável entre os membros da comunidade, se utilizando de um ambiente lúdico de pesquisa e aprendizado, o DrupalHub agrega diversos tipos informações sobre Drupal em um único local. </p>
+                </div>
+                <div class="link-start">
+                    <a href="" class="btn-primary">Começar!</a>
+                </div>
             </div>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Feito com <span class="octicon octicon-heart"></span> pela <strong>Team</strong>Work.</p>
+    </footer>
+    <div>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/modernizr.js"></script>
     <script type="text/javascript" src="js/front.js"></script>
