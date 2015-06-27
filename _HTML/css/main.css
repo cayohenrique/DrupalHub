@@ -151,6 +151,7 @@ body{
 }
 .mobile-touch-header .form-container input[type=text] {
     padding:10px;
+    background-position:right 11px;
 }
 .menu-bar a,
 .menu-gh a{
