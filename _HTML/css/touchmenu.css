@@ -11,6 +11,17 @@ header .menu-container {
   position:absolute;
   left:26px;
   top:35px;
+  cursor:pointer;
+}
+
+.logged-user {
+    padding: 13px 23px 12px;
+}
+
+html.mobile-touch-menu-exists .mobile-touch-menu .logged-user a {
+	display:inline;
+	padding:0;
+	border:0;
 }
 
 .mobile-touch-menu,
@@ -73,18 +84,19 @@ html.mobile-touch-menu-exists.menu-open .mobile-touch-menu {
 
 html.mobile-touch-menu-exists .mobile-touch-menu ul {
 	padding:0;
-	margin:1em 0;
+	margin:0;
 }
 html.mobile-touch-menu-exists .mobile-touch-menu li {
 	list-style:none;
-	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
 	padding-top:0;
 }
 html.mobile-touch-menu-exists .mobile-touch-menu a {
 	text-decoration: none;
-	color:#414b59;
+	color:#34a4de;
 	padding: 13px 23px 12px;
 	display:block;
+	
 }
 html.mobile-touch-menu-exists .mobile-touch-menu a.active {
 	  color: #ff6600;
