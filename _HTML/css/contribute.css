@@ -1,10 +1,12 @@
 .contribute .home-banner {
 	min-height: 500px;	
 }
-.contribute .header-title {
-	font-size: 70px;
+.header-title-contrib {
+	font-size:67px;
 	margin-bottom: 85px;
+	
 }
+
 .banner-menu-item {
 	display: inline-block;
 	background-color: #5AB9E1;
