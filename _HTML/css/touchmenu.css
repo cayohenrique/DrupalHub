@@ -144,7 +144,7 @@ html.mobile-touch-menu-exists .mobile-touch-menu .inner-highest {
 }*/
 
 html.mobile-touch-menu-exists .mobile-touch-header {
-	box-shadow:0 0 5px rgba(0,0,0,0.3);
+	
 	z-index:10;
 	text-align: center;
 	position:relative;

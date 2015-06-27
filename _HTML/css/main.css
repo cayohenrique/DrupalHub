@@ -132,6 +132,9 @@ body{
     width:100%;
     z-index:10;
 }
+.mobile-touch-header .inner {
+    min-height:39px;
+}
 .mobile-touch-header .header-title {
     margin-left:60px;
     font-size:34px;
@@ -163,6 +166,9 @@ body{
    min-height: 600px;
    text-align: center;
    margin-bottom: 50px;
+}
+.main .row:first-child {
+    padding-top:20px;
 }
 .main h3{
   color: #78909c;
@@ -237,7 +243,9 @@ body{
     width: 100%;
 }
 
-
+.page-wrapper {
+    padding-top:84px;
+}
 .btn-primary{
     color: #34a4de;
     font-size: 19px;
