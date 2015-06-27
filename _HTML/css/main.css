@@ -125,12 +125,33 @@ body{
     margin-left: 0;
 }
 
-header{
+.mobile-touch-header{
     background: #34a4de;
-    padding: 15px 0;
+    padding: 28px 0 18px;
     overflow: hidden;
+    text-align:center;
+    position:fixed;
+    width:100%;
+    z-index:10;
 }
-
+.mobile-touch-header .inner {
+    min-height:39px;
+}
+.mobile-touch-header .header-title {
+    margin-left:60px;
+    font-size:34px;
+    margin-top:0;
+    line-height: 0.7;
+    float:left;
+}
+.mobile-touch-header .search {
+    display:inline-block;
+    margin-top:-10px;
+    margin-bottom:0
+}
+.mobile-touch-header .form-container input[type=text] {
+    padding:10px;
+}
 .menu-bar a,
 .menu-gh a{
     font-size: 32px;
@@ -148,13 +169,16 @@ header{
    text-align: center;
    margin-bottom: 50px;
 }
+.main .row:first-child {
+    padding-top:20px;
+}
 .main h3{
   color: #78909c;
   font-size: 24px;
   font-weight: 300;
   margin-top: 0;
-  margin-bottom: 24px;
-  font-family: 'source_sans_proregular';
+  margin-bottom: 17px;
+  font-family: 'titilliumlight';
 }
 
 .header-title{
@@ -221,7 +245,9 @@ header{
     width: 100%;
 }
 
-
+.page-wrapper {
+    padding-top:84px;
+}
 .btn-primary{
     color: #34a4de;
     font-size: 19px;
@@ -235,7 +261,7 @@ header{
 
 .card{
     background: #fff;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.04), 0 1px 5px 0 rgba(0, 0, 0, 0.05), 0 3px 1px -2px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     padding: 20px;
     min-height: 170px;
@@ -315,10 +341,14 @@ header{
     min-height: 550px;
     background: #34a4de;
     color: #fff;
+    margin-top:50px;
+    font-family:"titilliumlight";
+    font-size: 19px;
 }
 
 .como-funciona p{
     line-height: 30px;
+    margin-bottom:20px;
 }
 
 .content{
@@ -336,7 +366,6 @@ header{
     font-size: 42px;
     font-family: 'titillium_bdbold';
 }
-
 .link-start{
     text-align: center;
     margin: 40px 0;
@@ -350,4 +379,62 @@ footer{
     font-family: 'source_sans_proregular';
     font-size: 16px;
     letter-spacing: 0.10em;
+}
+
+.page-title {
+    font-size:60px;
+    font-family:titilliumregular;
+    color:#78909c;
+}
+
+.filters select.custom,
+.filters input[type="text"] {
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.04), 0 1px 5px 0 rgba(0, 0, 0, 0.05), 0 3px 1px -2px rgba(0, 0, 0, 0.1);
+  border:0;
+  display:inline-block;
+  -webkit-appearance: none;
+  padding:11px 40px 12px 15px;
+  font-family: titilliumlight;
+  color:#78909c;
+  font-size:24px;
+  width:49%;
+  background:url(../img/ico-select.png) no-repeat right 26px #fff;
+  height:59px;
+}
+.filters input[type="text"] { 
+    background:url(../img/ico-search.png) no-repeat right 18px #fff;
+    float: right;   
+}
+
+.filters input[type="text"]::-webkit-input-placeholder {
+   color: #78909c;
+}
+
+.filters input[type="text"]:-moz-placeholder {
+   color: #78909c;
+}
+
+.filters input[type="text"]::-moz-placeholder {
+   color: #78909c;  
+}
+
+.filters input[type="text"]:-ms-input-placeholder {  
+   color: #78909c;  
+}
+.filters {
+    margin-bottom:20px;
+}
+
+@media screen and (min-width:1228px) {
+    .mobile-touch-header .search {
+        min-width:530px;
+          margin-left: -198px;
+    }
+}
+
+@media screen and (max-width:1228px) {
+    .mobile-touch-header .search {
+        display:none
+    }
 }
