@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="DrupalHub">
+<head>
+    <meta charset="UTF-8">
+    <title>DrupalHub - Explore o mundo do Drupal</title>
+    <link rel="stylesheet" href="css/touchmenu.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/octicons.css">
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+    <script src="js/drupalhub.js"></script>
+</head>
+<body>
+    <div class="header-wrapper">
+        <nav class="menu-container">
+            <div class="logged-user">
+                <p>Logado como <a href="user.html">Eileen Wood</a>. <a href="#"> Sair</a></p>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="leaderboard.html">Leaderboad</a></li>
+                <li><a href="contribute.html">Contribua</a></li>
+            </ul>
+        </nav>
+     </div>
+    <div class="page-wrapper">
+        <header>
+            <div class="inner">
+            <div class="col-md-11">
+                <h1 class="header-title"><a href="index.html">Drupal<span>HUB</span></a></h1>
+                
+                </div>
+                <div class="menu-gh col-md-1">
+                    <a href="https://github.com/LoveWins/DrupalHub" class="octicon octicon-mark-github"></a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="row home-banner">
+                <div class="container">
+                    <h1 class="header-title">Drupal<span>HUB</span></h1>
+                    <h2 class="header-subtitle">Agregando conteúdo Drupal, aumentando a colaboração.</h2>
+                    <form class="search">
+                        <div class="form-container">
+                            <input name="q" class="search-field" type="text" id="search-field" autocomplete="off" placeholder="Encontre módulos, treinamentos, patches ou posts">
+                            <label class="search-label" for="search-field">
+                                <span class="search-label-content"></span>
+                            </label>
+                        </div>
+                    </form>
+                    <p class="mini-info">ou</p>
+                    <a href="contribute.html" class="btn-primary">Cadastre sua contribuição :)</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container">
+                    <div class="col-md-6" ng-controller="ListaUsuariosCtrl">
+                        <h3>Quem mais contribui</h3>                    
+                        
+                        <div class="card x-scope paper-material-0" ng-repeat="usuario in usuarios">
+                            <div class="card-image">
+                                <img src="https://randomuser.me/api/portraits/med/women/{{usuario.uid}}.jpg" alt="">
+                            </div>
+                            <div class="card-top">
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        <a target="_blank" href="user.html?id={{usuario.uid}}">{{usuario.users_name}}</a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-description">Pellentesque eu molestie diam, in fermentum lectus. Duis a orci a erat. Aliquam commodo quis felis a volutpat. Duis posuere ut nisl vitae auctor.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <ul class="card-info-list">
+                                        <li class="card-info-item">
+                                            <span class="octicon octicon-heart"></span>
+                                            {{usuario.curtidas_total}}
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Contribuições mais populares</h3>
+                        <div class="card contrib x-scope paper-material-0">
+                            <a class="card-link" target="_blank" href="https://github.com/laborsync/ls-timezone-selector/"></a>
+                            <div class="card-header">
+                                <div class="card-title">
+                                    <a target="_blank" href="https://github.com/laborsync/ls-timezone-selector/">Modúlo lorem ipsum dolor sit amet</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-description">Pellentesque eu molestie diam, in fermentum lectus. Duis a orci a erat. Aliquam commodo quis felis a volutp u sdi  irua at. Duis posuere ut nisl vitae auctor. </p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="card-subtitle">
+                                    by <a target="_blank" href="https://github.com/">johndoe</a>
+                                </span>
+                                <ul class="card-info-list">
+                                    <li class="card-info-item">
+                                        <span class="octicon octicon-repo"></span>
+                                        0
+                                    </li>
+                                    <li class="card-info-item">
+                                        <span class="octicon octicon-repo-forked"></span>
+                                        0
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card contrib x-scope paper-material-0">
+                            <a class="card-link" target="_blank" href="https://github.com/laborsync/ls-timezone-selector/"></a>
+                            <div class="card-header">
+                                <div class="card-title">
+                                    <a target="_blank" href="https://github.com/laborsync/ls-timezone-selector/">Modúlo lorem ipsum dolor sit amet</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-description">Pellentesque eu molestie diam, in fermentum lectus. Duis a orci a erat. Aliquam commodo quis felis a volutp u sdi  irua at. Duis posuere ut nisl vitae auctor. </p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="card-subtitle">
+                                    by <a target="_blank" href="https://github.com/">johndoe</a>
+                                </span>
+                                <ul class="card-info-list">
+                                    <li class="card-info-item">
+                                        <span class="octicon octicon-repo"></span>
+                                        0
+                                    </li>
+                                    <li class="card-info-item">
+                                        <span class="octicon octicon-repo-forked"></span>
+                                        0
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Contribuições mais populares</h3>
+                        <div class="card contrib x-scope paper-material-0">
+                            <a class="card-link" target="_blank" href="https://github.com/laborsync/ls-timezone-selector/"></a>
+                            <div class="card-header">
+                                <div class="card-title">
+                                    <a target="_blank" href="https://github.com/laborsync/ls-timezone-selector/">Modúlo lorem ipsum dolor sit amet</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-description">Pellentesque eu molestie diam, in fermentum lectus. Duis a orci a erat. Aliquam commodo quis felis a volutp u sdi  irua at. Duis posuere ut nisl vitae auctor. </p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="card-subtitle">
+                                    by <a target="_blank" href="https://github.com/">johndoe</a>
+                                </span>
+                                <ul class="card-info-list">
+                                    <li class="card-info-item">
+                                        <span class="octicon octicon-repo"></span>
+                                        0
+                                    </li>
+                                    <li class="card-info-item">
+                                        <span class="octicon octicon-repo-forked"></span>
+                                        0
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card contrib x-scope paper-material-0">
+                            <a class="card-link" target="_blank" href="https://github.com/laborsync/ls-timezone-selector/"></a>
+                            <div class="card-header">
+                                <div class="card-title">
+                                    <a target="_blank" href="https://github.com/laborsync/ls-timezone-selector/">Modúlo lorem ipsum dolor sit amet</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-description">Pellentesque eu molestie diam, in fermentum lectus. Duis a orci a erat. Aliquam commodo quis felis a volutp u sdi  irua at. Duis posuere ut nisl vitae auctor. </p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="card-subtitle">
+                                    by <a target="_blank" href="https://github.com/">johndoe</a>
+                                </span>
+                                <ul class="card-info-list">
+                                    <li class="card-info-item">
+                                        <span class="octicon octicon-repo"></span>
+                                        0
+                                    </li>
+                                    <li class="card-info-item">
+                                        <span class="octicon octicon-repo-forked"></span>
+                                        0
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row como-funciona">
+                <div class="container">
+                    <h4>Sobre o DrupalHub</h4>
+                    <div class="content">
+                        <p>O DrupalHub foi criado durante o Hackathon da Drupal Camp 2015, visando atender ao tema-desafio proposto:</p>
+                        <p>“Engajar a comunidade Drupal no Brasil, de forma a mais pessoas participarem ativamente desta, promovendo a troca e a colaboração.”</p>
+                        <p>Baseando-se em estimular a competição saudável entre os membros da comunidade, se utilizando de um ambiente lúdico de pesquisa e aprendizado, o DrupalHub agrega diversos tipos informações sobre Drupal em um único local. </p>
+                    </div>
+                    <div class="link-start">
+                        <a href="" class="btn-primary">Começar!</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Feito com <span class="octicon octicon-heart"></span> pela <a href="https://github.com/LoveWins/" class="link-text"><strong>Love</strong>Wins</a>.</p>
+        </footer>
+    <div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/front.js"></script>
+</body>
+</html>
